@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,700;0,900;1,500&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+@font-face {
+  font-family: "landroverweb_bold";
+  src: url("../fonts/landroverweb_bold.eot");
+  src: local("☺"), url("../fonts/landroverweb_bold.woff") format("woff"), url("../fonts/landroverweb_bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "FrozenCrystal";
+  src: url("../fonts/FrozenCrystal.eot");
+  src: local("☺"), url("../fonts/FrozenCrystal.woff") format("woff"), url("../fonts/FrozenCrystal.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+/* Границы ---------------------------------------------------------------------------- */
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	line-height: 1;
+	text-rendering: optimizeLegibility;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+input,
+button,
+textarea {
+	font-size: inherit;
+}
+button {
+	cursor: pointer;
+	color: inherit;
+	background-color: inherit;
+}
+a {
+	color: inherit;
+}
+a:link,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+/* ---------------------------------------------------------------------------------------- */
+html,
+body {
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+  font-size: 16px;
+}
+body.lock{
+  overflow: hidden;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #000;
+  min-height: 100%;
+}
+[class*="__container"] {
+  margin: 0 auto;
+}
+
+.toTop {
+  border: 1px solid #000;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background-color: #005c53cb;
+  margin: 10px;
+  padding: 15px;
+  color: #fff;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  z-index: 5;
+}
+.toTop:hover {
+  background-color: #003530cc;
+}
+.logo__body {
+  border: 2px solid #DFEBEA;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.logo__text {
+  font-family: Montserrat;
+  color: rgb(255, 0, 4);
+  font-size: 40px;
+  font-weight: 900;
+  flex: 1 1 80%;
+}
+.logo__text span{
+  background-image: url('img/fuel.jpg');
+  color: rgb(255, 0, 4);
+  font-size: 40px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+.warning {
+  flex: 1 1 20%;
+}
+.warning__text {
+  text-align: center;
+}
+.main {
+  flex: 1 1 auto;
+}
+.fuel{
+  font-family: "landroverweb_bold";
+  font-family: "FrozenCrystal";
+  color: #000;
+  font-size: 30px;
+}
+.main {
+}
+.toTop {
+}
+.container {
+}
+.fuel__tank {
+  border: 2px solid #DFEBEA;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.tank-body {
+}
+.fuel__tank_title {
+  font-family: "landroverweb_bold";
+  font-weight: 700;
+  font-size: 35px;
+  margin: 0px 0px 20px 0px;
+}
+.fuel__tank_screen {
+  display: inline-block;
+  background-color: #DFEBEA;
+  margin: 5px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+.gas-station {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #DFEBEA;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.gas-station-body {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.gas-station__title {
+  font-family: "landroverweb_bold";
+  font-weight: 700;
+  font-size: 35px;
+  margin: 0px 0px 20px 0px;
+  flex: 1 1 100%;
+}
+.gas-station__image {
+}
+.truck__fuel {
+  flex: 1 1 33.333%;
+}
+.truck__fuel .fuel{
+  text-align: right;
+}
+.truck {
+  display: block;
+  background-color: #DFEBEA;
+  margin: 15px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.fuel__text {
+  padding: 0px 0px 0px 20px;
+  font-size: 24px;
+}
+.refrigerator {
+  display: block;
+  background-color: #DFEBEA;
+  margin: 15px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.heating-engine {
+  display: block;
+  background-color: #DFEBEA;
+  margin: 15px;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+.footer {
+  width: 100%;
+  background: url('img/fuel.jpg')0 0/cover no-repeat;
+  min-height: 100px;
+  margin: 0 auto;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+.footer__body {
+  display: flex;
+  color: rgba(255, 0, 4, 0.63);
+}
+.footer__item {
+  margin: 20px;
+  padding: 10px;
+  flex: 1 1 33.333%;
+}
+.copyright {
+  text-align: center;
+  margin: 5px 10px;
+  padding: 10px;
+}
