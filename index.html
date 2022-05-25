@@ -32,26 +32,42 @@
       <a href="#toTop" class="toTop">Наверх!</a>
       <div class="container">
         <div class="fuel__tank tank-body">
-          <div class="fuel__tank_title">Емкость, литров</div>
-          <div class="fuel__tank_screen fuel">12345.000</div>
+          <div class="tank-body1">
+            <div class="fuel__tank_title">Емкость, литров</div>
+            <div class="fuel__tank_screen fuel">12345.000</div>
+          </div>
+          <div class="tank-body2">
+            <div class="fuel__tank_title">Остаток, литров</div>
+            <div class="fuel__tank_screen fuel">12345.000</div>
+          </div>
         </div>
         <div class="gas-station">
           <div class="gas-station-body">
             <div class="gas-station__title">Заправлено:</div>
-            <div class="gas-station__image"> </div>
-            <div class="truck__fuel">
-              <div class="truck fuel">1234.000</div>
-              <div class="fuel__text">Тягач, л</div>
-            </div>
-            <div class="truck__fuel">
-              <div class="refrigerator fuel">123.000</div>
-              <div class="fuel__text">Рефрижератор, л</div>
-            </div>
-            <div class="truck__fuel">
-              <div class="heating-engine fuel">10.000</div>
-              <div class="fuel__text">Автономка, л</div>
-            </div>
+            <form action="#" id="form" class="form__body">
+              <div class="truck__fuel">
+                <input id="formTruck" type="number" name="name" class="form__input truck fuel" placeholder="1234.000">
+                <label for="formTruck" class="form__label fuel__text">Тягач, л</label>
+              </div>
+              <div class="truck__fuel">
+                <input id="formRefrigerator" type="number" name="name" class="form__input refrigerator fuel"
+                  placeholder="123.000">
+                <label for="formRefrigerator" class="form__label fuel__text">Рефрижератор, л</label>
+              </div>
+              <div class="truck__fuel">
+                <input id="formHeating-engine" type="number" name="name" class="form__input heating-engine fuel"
+                  placeholder="10.000">
+                <label for="formHeating-engine" class="form__label fuel__text">Автономка, л</label>
+              </div>
+            </form>
+            <button type="submit" class="form__button">Обработать</button>
 
+
+
+            <div class="all-operative-fuel">
+              <div class="all-operative-fuel fuel">1234.000</div>
+              <div class="fuel__text">Всего заправлено, л</div>
+            </div>
 
           </div>
         </div>

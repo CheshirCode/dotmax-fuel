@@ -15,7 +15,7 @@
   font-weight: normal;
   font-style: normal;
 }
-/* Границы ---------------------------------------------------------------------------- */
+/* Обнуление страницы ===================================================================================== */
 * {
 	padding: 0px;
 	margin: 0px;
@@ -126,7 +126,7 @@ body.lock{
 .logo__body {
   border: 2px solid #DFEBEA;
   border-radius: 10px;
-  margin: 20px;
+  margin: 15px;
   padding: 20px;
   display: flex;
   -webkit-border-radius: 10px;
@@ -180,19 +180,28 @@ body.lock{
   -o-border-radius: 10px;
 }
 .tank-body {
+  display: flex;
+}
+.tank-body1 {
+  flex: 1 1 50%;
+}
+.tank-body2 {
+  flex: 1 1 50%;
 }
 .fuel__tank_title {
   font-family: "landroverweb_bold";
   font-weight: 700;
   font-size: 35px;
   margin: 0px 0px 20px 0px;
+  padding: 0px 0px 0px 15px;
 }
 .fuel__tank_screen {
-  display: inline-block;
+  display: block;
   background-color: #DFEBEA;
-  margin: 5px;
+  margin: 10px;
   padding: 10px 20px;
   border-radius: 10px;
+  text-align: right;
 }
 
 .gas-station {
@@ -208,19 +217,31 @@ body.lock{
 .gas-station-body {
   display: flex;
   flex-wrap: wrap;
-  
 }
 .gas-station__title {
   font-family: "landroverweb_bold";
   font-weight: 700;
   font-size: 35px;
   margin: 0px 0px 20px 0px;
+  padding: 0px 0px 0px 15px;
   flex: 1 1 100%;
 }
-.gas-station__image {
+
+/* Форма=============================================================================================== */
+.form__body {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
+
 .truck__fuel {
   flex: 1 1 33.333%;
+}
+.form__label {
+
+}
+.form__input {
+  max-width: 100%;
 }
 .truck__fuel .fuel{
   text-align: right;
@@ -228,9 +249,10 @@ body.lock{
 .truck {
   display: block;
   background-color: #DFEBEA;
-  margin: 15px;
-  padding: 10px 20px;
+  margin: 10px;
+  padding: 10px;
   border-radius: 10px;
+
 }
 .fuel__text {
   padding: 0px 0px 0px 20px;
@@ -239,16 +261,55 @@ body.lock{
 .refrigerator {
   display: block;
   background-color: #DFEBEA;
-  margin: 15px;
-  padding: 10px 20px;
+  margin: 10px;
+  padding: 10px;
   border-radius: 10px;
 }
 .heating-engine {
   display: block;
   background-color: #DFEBEA;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.form__button {
+  background-color: rgb(150, 96, 26);
+  border: 2px solid #DFEBEA;
+  border-radius: 10px;
   margin: 15px;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.form__button:hover{
+  background-color: rgb(2, 9, 39);
+  color: red;
+}
+.all-operative-fuel{
+  margin: 15px;
+  padding: 15px;
+  display: block;
+  flex: 1 1 100%;
+  border: 2px solid #DFEBEA;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.all-operative-fuel .fuel{
+  display: block;
+  background-color: #E3935E;
+  margin: 10px;
   padding: 10px 20px;
   border-radius: 10px;
+  text-align: right;
+}
+.fuel {
+}
+.fuel__text {
+  
 }
 .footer {
   width: 100%;
