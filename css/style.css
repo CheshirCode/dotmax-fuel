@@ -142,7 +142,7 @@ body.lock{
   flex: 1 1 80%;
 }
 .logo__text span{
-  background-image: url('img/fuel.jpg');
+  
   color: rgb(255, 0, 4);
   font-size: 40px;
   font-weight: 900;
@@ -265,7 +265,7 @@ body.lock{
   padding: 10px;
   border-radius: 10px;
 }
-.heating-engine {
+.heatingEngine {
   display: block;
   background-color: #DFEBEA;
   margin: 10px;
@@ -313,7 +313,6 @@ body.lock{
 }
 .footer {
   width: 100%;
-  background: url('img/fuel.jpg')0 0/cover no-repeat;
   min-height: 100px;
   margin: 0 auto;
   color: #fff;
